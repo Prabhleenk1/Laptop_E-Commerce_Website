@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@600&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Poppins:wght@600&family=Raleway&family=Rubik:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans&family=Montserrat&family=Poppins:wght@600&family=Raleway&family=Rubik:wght@300&display=swap");
+font-family: "Josefin Sans", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: aquamarine;
+}
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.headline {
+  margin: 20px;
+}
+#logo {
+  font-family: Roboto;
+}
+#logo:hover {
+  color: aqua;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  display: grid;
+  grid-template-columns: 120px 120px;
+}
+.login p {
+  font-family: Roboto;
+}
+body {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.aboutusnav {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  margin: 20px;
+  gap: 5px;
+}
+.aboutusnav a {
+  text-decoration: underline;
+  text-decoration-color: rgb(175, 174, 174);
+}
+.aboutusnav img {
+  height: 10px;
+  margin-top: 5px;
+}
+.arrowupbtn a {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.first_head {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+.first_head h2 {
+  font-family: "Raleway", sans-serif;
+  word-spacing: 2px;
+  font-size: 4.2rem;
+  font-weight: 200;
+}
+.para {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.para p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  margin-top: 1px;
+  transform: rotate(90deg);
+  width: 60rem;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  word-spacing: 2px;
+  font-size: 4.2rem;
+  font-weight: 200;
+}
+h2:hover {
+  text-decoration: underline;
+}
+.image_text {
+  padding: 15px;
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+.image_text p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 7%;
+}
+.image_text img {
+  padding-left: 15px;
+  aspect-ratio: 16/9;
+  border-radius: 15%;
+  height: auto;
+}
+.FAQ {
+  margin-top: 2em;
+}
+.faq_head {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  word-spacing: 2px;
+  font-size: 4.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+.deatils {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+details {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+}
+summary {
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+  padding: 5px 25px;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+}
+details:nth-child(10) {
+  margin-bottom: 10%;
+}
+.deatils img {
+  margin-right: 15px;
+}
+.download {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.download p {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+.pdfdownload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdfdownload a {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.bottombox {
+  gap: 10%;
+  margin: 53px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottombox ul {
+  margin-top: 2rem;
+  color: #636363;
+  font-family: Roboto;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.bottombox li {
+  font-size: 20px;
+  list-style: none;
+  line-height: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+.bottombox a {
+  color: #636363;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Black.ttf");
+}
+@media (max-width: 1355px) {
+  .image img {
+    width: 30rem;
+  }
+}
+@media (max-width: 540px) {
+  .image img {
+    width: 10rem;
+  }
+  .para {
+    margin-top: 10px;
+  }
+  summary {
+    font-size: 14px;
+  }
+  details {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .faq_head {
+    font-size: 25px;
+  }
+  .first_head h2 {
+    word-spacing: 1px;
+    font-size: 2.2rem;
+  }
+  .download p {
+    font-size: 1rem;
+  }
+  .pdfdownload a img {
+    width: 20%;
+  }
+
+  .bottombox ul {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .bottombox li {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+  .bottombox a {
+    font-size: 14px;
+  }
+  .bottombox {
+    gap: 5%;
+    margin: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .image img {
+    width: 40%;
+    position: relative;
+    left: 29%;
+  }
+}
+
+@media (max-width: 1007px) {
+  .image_text img {
+    width: 50%;
+    border-radius: 15%;
+    margin-left: 25%;
+    margin-right: 30%;
+  }
+  .image_text {
+    display: grid;
+    grid-column: auto;
+  }
+  .faq_head h3 {
+    font-size: 2rem;
+    margin-top: 1.4rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1833px) {
+  .para p {
+    font-size: 30px;
+  }
+  .image_text p {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 709px) {
+  .image img {
+    width: 40%;
+    position: relative;
+    left: 29%;
+  }
+}

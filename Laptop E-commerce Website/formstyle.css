@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans&family=Montserrat&family=Poppins:wght@600&family=Raleway&family=Roboto:wght@900&family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+::selection {
+  background-color: #a8f7c3;
+  color: black;
+}
+body {
+  background-image: url("/media/background.jpg");
+  background-size: 100%;
+  /* overflow: hidden; */
+}
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-family: "Cinzel Decorative", cursive;
+  pointer-events: none;
+  user-select: none;
+}
+form {
+  height: 87vh;
+  width: 50vw;
+  background-color: transparent;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  border: 1px solid white;
+  animation: float 3s infinite;
+  font-weight: 700;
+}
+fieldset {
+  /* top bottom left right */
+  margin: 2rem 6rem;
+  /* top right bottom left */
+  padding: 10px 0 15px 2rem;
+  color: whitesmoke;
+  border-radius: 15px;
+}
+legend {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+textarea {
+  margin-right: 15px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+label {
+  display: block;
+  margin-left: 1px;
+  margin-bottom: 10px;
+}
+input {
+  margin-bottom: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) translateY(-12px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(12px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-12px);
+  }
+}
+button {
+  font-family: inherit;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+  color: white;
+  padding: 0.6em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-left: 18rem;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}

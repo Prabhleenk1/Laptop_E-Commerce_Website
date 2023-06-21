@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@600&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@600&family=Raleway&family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Poppins:wght@600&family=Raleway&family=Rubik:wght@300&display=swap");
+/* @import "https://fonts.googleapis.com/css2?family=Megrim&display=swap"; */
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans&family=Montserrat&family=Poppins:wght@600&family=Raleway&family=Rubik:wght@300&display=swap");
+font-family: "Josefin Sans", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+::selection {
+  background-color: aquamarine;
+}
+body {
+  margin: 2rem;
+  animation: loader 4s;
+}
+
+.header,
+.signin {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  animation: ani1 2s ease-in;
+}
+.signin {
+  gap: 2rem;
+}
+.header p:not(1) {
+  pointer-events: none;
+}
+p {
+  font-weight: 700;
+  font-size: 18px;
+}
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+.arrowupbtn a {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.headline h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.headline h3:hover {
+  text-decoration: underline;
+}
+.parapic {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 25px;
+}
+.parapic p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.parapic .image a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 2vh;
+  animation: an1 1s linear infinite;
+}
+.getstarted {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+
+  border: 1px light;
+}
+.getstarted p {
+  /* font-family: Roboto; */
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+}
+
+.container {
+  gap: 10%;
+  margin: 50px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container2 {
+  gap: 10%;
+  margin: 50px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+video {
+  width: 50vw;
+  aspect-ratio: 16/9;
+  border-radius: 15%;
+}
+.righttext {
+  margin-top: 100px;
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.nextheadline h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+.nextheadline h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.second_container {
+  gap: 10%;
+  margin: 53px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.second_container p {
+  margin-top: 5rem;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.second_container h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.second_container h3:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.bottombox {
+  gap: 10%;
+  margin: 53px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottombox ul {
+  margin-top: 2rem;
+  font-family: Roboto;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.bottombox li {
+  font-size: 20px;
+  list-style: none;
+  line-height: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+.bottombox a {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1374px) {
+  .header {
+    gap: 2em;
+  }
+  .header p {
+    font-size: 0.8rem;
+  }
+  .headline h3 {
+    font-size: 1.5rem;
+  }
+  .parapic {
+    display: grid;
+    grid-template-columns: repeat(1);
+    margin: 15px;
+  }
+  .parapic p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .parapic img {
+    width: 18rem;
+  }
+  .getstarted p {
+    font-size: 40px;
+  }
+  .container,
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(1);
+    margin: 2rem;
+  }
+  video {
+    width: 70vw;
+    aspect-ratio: 16/9;
+    border-radius: 15%;
+  }
+  .righttext {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+  }
+  .nextheadline h3 {
+    font-size: 15px;
+  }
+  .second_container {
+    display: grid;
+    grid-template-columns: repeat(1);
+    margin: 30px;
+  }
+  .second_container h3 {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .second_container p {
+    font-size: 15px;
+    margin-top: 2rem;
+  }
+  .footer {
+    margin-top: 18rem;
+    width: 100%;
+    min-height: 55vh;
+  }
+  .footer ul {
+    font-size: 18px;
+    margin-top: 12px;
+    letter-spacing: 1px;
+  }
+  .footer li {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    line-height: 15px;
+  }
+  .footer a {
+    font-size: 12px;
+  }
+  .bottombox {
+    gap: 5%;
+    margin: 35px;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(1);
+  }
+}
+@media (min-width: 1959px) {
+  .header p {
+    font-size: 2rem;
+  }
+  .headline h3 {
+    font-size: 2.5rem;
+  }
+  .parapic {
+    margin: 8rem;
+    gap: 18%;
+  }
+  .parapic p {
+    font-size: 28px;
+    text-align: center;
+  }
+  .parapic .image a {
+    font-size: 2.4rem;
+  }
+  .righttext p {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .getstarted p {
+    font-size: 5rem;
+  }
+  .nextheadline h3 {
+    margin-top: 8rem;
+    font-size: 2.5rem;
+  }
+  .second_container h3 {
+    font-size: 2.4rem;
+  }
+  .second_container p {
+    font-size: 1.7rem;
+  }
+  .footer ul {
+    font-size: 2.7rem;
+  }
+  .footer li,
+  .footer a {
+    font-size: 2rem;
+    line-height: 2em;
+  }
+}
+@keyframes an1 {
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes ani1 {
+  0% {
+    transform: translateY(-1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Black.ttf");
+}
